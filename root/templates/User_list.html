@@ -202,7 +202,7 @@
 </tr>
 </thead>
 <tbody>
-{% for user in users%}
+{% for user in users %}
 <tr>
 <td>
 <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt>
@@ -231,7 +231,7 @@
 <i class="fa fa-pencil fa-stack-1x fa-inverse"></i>
 </span>
 </a>
-<a href="#" class="table-link danger">
+<a href="{% url 'delete' pk=user.id %} " class="table-link danger">
 <span class="fa-stack">
 <i class="fa fa-square fa-stack-2x"></i>
 <i class="fa fa-trash-o fa-stack-1x fa-inverse"></i>
