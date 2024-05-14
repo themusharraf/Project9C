@@ -7,6 +7,7 @@ class People(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=225)
     email = models.CharField(max_length=225)
+    image = models.ImageField(upload_to='images', blank=True, null=True)
 
     def __str__(self):
         return self.full_name
