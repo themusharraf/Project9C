@@ -11,7 +11,7 @@ class Home(ListView):
 class UserDeleteView(DeleteView):
     model = People
     pk_url_kwarg = "pk"
-    success_url = '/'
+    success_url = "/"
     template_name = 'User_list.html'
 
     def delete(self, request, *args, **kwargs):
